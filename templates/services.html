@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Services | Luxury Nail Studio{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Services & Pricing</h1>
+    <p>Indulge in our premium nail care treatments.</p>
+</div>
+
+<div class="services-wrapper">
+    <!-- Manicures -->
+    <div class="service-category">
+        <div class="category-header">
+            <i class="fas fa-hand-sparkles"></i>
+            <h2>Manicures</h2>
+        </div>
+        <div class="service-cards">
+            <div class="service-card glass-card">
+                <div class="card-content">
+                    <h3>Classic Manicure</h3>
+                    <p>Shape, buff, cuticle care, massage, and polish.</p>
+                    <span class="price-tag">$35</span>
+                </div>
+            </div>
+            <div class="service-card glass-card">
+                <div class="card-content">
+                    <h3>Gel Manicure</h3>
+                    <p>Long-lasting gel polish with zero dry time.</p>
+                    <span class="price-tag">$50</span>
+                </div>
+            </div>
+            <div class="service-card glass-card featured">
+                <div class="card-content">
+                    <h3>Luxury Spa Manicure</h3>
+                    <p>Exfoliation, collagen glove, hot towel, and extended massage.</p>
+                    <span class="price-tag">$65</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pedicures -->
+    <div class="service-category">
+        <div class="category-header">
+            <i class="fas fa-shoe-prints"></i>
+            <h2>Pedicures</h2>
+        </div>
+        <div class="service-cards">
+            <div class="service-card glass-card">
+                <div class="card-content">
+                    <h3>Classic Pedicure</h3>
+                    <p>Soak, shape, cuticle care, scrub, massage, and polish.</p>
+                    <span class="price-tag">$45</span>
+                </div>
+            </div>
+            <div class="service-card glass-card">
+                <div class="card-content">
+                    <h3>Jelly Pedicure</h3>
+                    <p>Fun jelly soak texture for ultimate relaxation and hydration.</p>
+                    <span class="price-tag">$60</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nail Art -->
+    <div class="service-category">
+        <div class="category-header">
+            <i class="fas fa-paint-brush"></i>
+            <h2>Nail Art & Extensions</h2>
+        </div>
+        <div class="service-cards">
+            <div class="service-card glass-card">
+                <div class="card-content">
+                    <h3>Acrylic Full Set</h3>
+                    <p>Durable extensions with your choice of shape.</p>
+                    <span class="price-tag">$70+</span>
+                </div>
+            </div>
+            <div class="service-card glass-card">
+                <div class="card-content">
+                    <h3>Custom Art</h3>
+                    <p>Hand-painted, gems, chrome, foil etc.</p>
+                    <span class="price-tag">Variable</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .page-header {
+        text-align: center;
+        padding: 120px 20px 50px;
+    }
+
+    .services-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 5% 100px;
+    }
+
+    .service-category {
+        margin-bottom: 5rem;
+    }
+
+    .category-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 1rem;
+    }
+
+    .category-header i {
+        font-size: 2rem;
+        color: var(--primary-pink);
+    }
+
+    .category-header h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .service-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-card {
+        padding: 2rem;
+        position: relative;
+        transition: transform 0.3s ease;
+        height: 100%;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .featured {
+        border: 1px solid var(--primary-pink);
+        background: rgba(236, 72, 153, 0.1);
+    }
+
+    .card-content h3 {
+        color: var(--primary-pink);
+        margin-bottom: 1rem;
+    }
+
+    .price-tag {
+        display: inline-block;
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        background: var(--primary-pink);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-family: var(--font-heading);
+    }
+</style>
+{% endblock %}

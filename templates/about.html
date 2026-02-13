@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About | LuxeNails{% endblock %}
+
+{% block content %}
+<div class="page-header text-center" style="padding: 100px 20px 50px;">
+    <h1>Our Story</h1>
+    <p>Passion, Precision, and Pink.</p>
+</div>
+
+<!-- Origin Story -->
+<div class="about-section">
+    <div class="about-content">
+        <h2>How It Started</h2>
+        <p>LuxeNails was born from a desire to elevate the standard nail salon experience into something truly
+            extraordinary. Founded in 2024 by Isabella Rose, a master nail artist with over 15 years of experience, our
+            studio was conceived as a sanctuary where art meets self-care.</p>
+        <p>Isabella started in a small room in her apartment, fueled by an obsession with perfect cuticles and
+            innovative designs. Her reputation for perfection quickly spread, leading to the opening of our flagship
+            studio in Beverly Hills.</p>
+    </div>
+    <div class="about-image glass-card floating">
+        <img src="{% static 'images/services/service1.jpg' %}" alt="Our Salon Interior">
+    </div>
+</div>
+
+<!-- Inspiration -->
+<div class="about-section reverse">
+    <div class="about-content">
+        <h2>What Inspires Us</h2>
+        <p>We draw inspiration from everything around us: modern art, high fashion, nature's textures, and the vibrant
+            energy of the city. We believe that nails are a canvas for self-expression, not just a beauty routine.</p>
+        <p>Our "pink paradise" aesthetic is inspired by the calming yet playful nature of the color pink—representing
+            love, kindness, and femininity in all its forms.</p>
+    </div>
+    <div class="about-image glass-card floating" style="animation-delay: 1s;">
+        <img src="{% static 'images/gallery/work5.jpg' %}" alt="Nail Art Inspiration">
+    </div>
+</div>
+
+<!-- History of Nails -->
+<section class="section-container bg-glass-dark">
+    <div class="section-header text-center">
+        <h2>A Brief History of Nails</h2>
+        <p>Honoring the tradition of beauty.</p>
+    </div>
+    <div class="history-timeline">
+        <div class="timeline-item glass-card">
+            <h3>3000 BC</h3>
+            <p>In ancient China, nail color indicated social status. Royals wore gold and silver, later evolving to
+                black and red.</p>
+        </div>
+        <div class="timeline-item glass-card">
+            <h3>19th Century</h3>
+            <p>The "almond" shape became popular, and oils/creams were used for shine before liquid polish existed.</p>
+        </div>
+        <div class="timeline-item glass-card">
+            <h3>1920s</h3>
+            <p>The moon manicure (painting only the middle of the nail) was the height of fashion.</p>
+        </div>
+        <div class="timeline-item glass-card">
+            <h3>Today</h3>
+            <p>Nail art has become a global phenomenon, blending technology with pure artistic talent.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+        padding: 50px 5%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .about-section.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .about-content {
+        flex: 1;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+        color: var(--primary-pink);
+        margin-bottom: 1.5rem;
+    }
+
+    .about-image {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .history-timeline {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .timeline-item {
+        padding: 2rem;
+        text-align: center;
+        border-top: 3px solid var(--primary-pink);
+    }
+
+    .timeline-item h3 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 900px) {
+
+        .about-section,
+        .about-section.reverse {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+{% endblock %}

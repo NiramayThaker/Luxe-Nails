@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Work | Luxury Nail Studio{% endblock %}
+
+{% block content %}
+<div class="page-header text-center" style="padding: 100px 20px 50px;">
+    <h1>Our Masterpieces</h1>
+    <p>A curated collection of our finest nail artistry.</p>
+</div>
+
+<div class="work-container">
+    <!-- Item 1 -->
+    <div class="work-section">
+        <div class="work-image">
+            <img src="{% static 'images/gallery/work1.jpg' %}" alt="Rose Gold Chrome">
+        </div>
+        <div class="work-content">
+            <h2>Rose Gold Chrome</h2>
+            <p>A stunning combination of soft pinks and metallic rose gold chrome. This look features a seamless ombre
+                gradient that transitions into a mirror-like finish, catching the light from every angle. Perfect for
+                special occasions or when you just want to shine.</p>
+            <p><strong>Duration:</strong> 90 mins | <strong>Level:</strong> Expert</p>
+        </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="work-section">
+        <div class="work-image">
+            <img src="{% static 'images/gallery/work2.jpg' %}" alt="Marble Effect">
+        </div>
+        <div class="work-content">
+            <h2>Marble Fantasy</h2>
+            <p>Ethereal white and pink marble designs created with hand-painted precision. Each nail is unique,
+                featuring swirls of color that mimic natural stone. Accented with gold foil for a touch of opulence.</p>
+            <p><strong>Duration:</strong> 100 mins | <strong>Level:</strong> Artist</p>
+        </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="work-section">
+        <div class="work-image">
+            <img src="{% static 'images/gallery/work3.jpg' %}" alt="Classic French">
+        </div>
+        <div class="work-content">
+            <h2>Modern French</h2>
+            <p>The timeless classic, reimagined. We use a milky white base with razor-sharp deep smile lines. This
+                sophisticated look elongates the fingers and provides a clean, polished appearance suitable for any
+                setting.</p>
+            <p><strong>Duration:</strong> 60 mins | <strong>Level:</strong> Intermediate</p>
+        </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="work-section">
+        <div class="work-image">
+            <img src="{% static 'images/gallery/work4.jpg' %}" alt="Abstract Art">
+        </div>
+        <div class="work-content">
+            <h2>Abstract Lines</h2>
+            <p>For the bold and artistic. Negative space combined with geometric black and neon pink lines. This
+                contemporary design is a statement piece, showing off the natural nail while adding a pop of vibrant
+                color.</p>
+            <p><strong>Duration:</strong> 120 mins | <strong>Level:</strong> Master</p>
+        </div>
+    </div>
+    <!-- Item 5 -->
+    <div class="work-section">
+        <div class="work-image">
+            <img src="{% static 'images/gallery/work5.jpg' %}" alt="Glitter Ombre">
+        </div>
+        <div class="work-content">
+            <h2>Glitter Ombre</h2>
+            <p>Sparkle with sophistication. A soft gradient of fine shimmer fading into a neutral base. Perfect for
+                brides or anyone who wants a touch of magic without being overwhelming.</p>
+            <p><strong>Duration:</strong> 75 mins | <strong>Level:</strong> Advanced</p>
+        </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="work-section">
+        <div class="work-image">
+            <img src="{% static 'images/gallery/work1.jpg' %}" alt="Matte & Gloss Fusion">
+        </div>
+        <div class="work-content">
+            <h2>Matte & Gloss Fusion</h2>
+            <p>Playing with textures. A velvety matte black base with high-gloss tips or geometric accents. The contrast
+                creates a modern, edgy look that feels incredibly luxurious to the touch.</p>
+            <p><strong>Duration:</strong> 90 mins | <strong>Level:</strong> Expert</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
